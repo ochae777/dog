@@ -1,0 +1,61 @@
+.main-product-bar {
+  font-family: YoonChildfundkoreaManSeh;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0%;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.product-market {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 80px;
+  font-weight: 500px;
+  font-weight: bolder;
+}
+.product-sonny {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+}
+
+.product-sonny img {
+  width: min(360px, 80%);
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+
+.product-sale {
+  margin: 0;
+  font-weight: 30px;
+  font-size: 30px;
+}
+.product-price {
+  margin: 0;
+  font-weight: 600;
+  font-size: 18px;
+  color: #333;
+}
+
+.product-first-row {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 400px;
+}
+.product-second-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 400px;
+}

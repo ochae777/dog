@@ -1,0 +1,119 @@
+/* 전체 레이아웃 */
+.family-root {
+  font-family: YoonChildfundkoreaManSeh;
+  margin: 0;
+}
+.family-sonny-png {
+  margin: 0 auto;
+}
+.family-sonny {
+  position: absolute;
+  z-index: 99;
+  width: 100%;
+  bottom: 0;
+  display: flex;
+}
+.family-icon {
+  font-size: 500px;
+  color: lightpink;
+  position: relative;
+}
+.family-text {
+  position: absolute;
+  top: 50%; /* 세로 중앙 */
+  left: 50%; /* 가로 중앙 */
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: bolder;
+  color: black;
+  text-align: center;
+  pointer-events: none; /* 글자 클릭 시 a태그 클릭 유지 */
+}
+.family-sonny-png {
+  position: relative;
+}
+/* .family-header {
+  margin-top: 10px;
+
+  font-size: 50px;
+  font-weight: bolder;
+  align-items: center;
+  justify-content: center;
+} */
+/* 말풍선 컨테이너 */
+.family-header {
+  position: absolute; /* 쏘니 사진 기준으로 배치 가능 */
+  top: -300px; /* 쏘니 위쪽으로 */
+  left: 1200px; /* 쏘니 오른쪽으로 (조절 가능) */
+
+  z-index: 2; /* 사진보다 위 */
+}
+.family-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 좌/우 */
+  grid-template-rows: 1fr 1fr; /* 상/하 */
+  height: 100vh; /* 화면 4분할 */
+  width: 100vw;
+}
+
+/* 공통 카드 스타일: 이미지와 글자 센터 정렬 */
+.family-introduce {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* 가로 중앙 */
+  justify-content: center; /* 세로 중앙 */
+  text-align: center;
+  gap: 5px;
+  padding: 5px;
+}
+
+/* 이미지 크기 통일(필요에 맞게 조절) */
+.family-image img {
+  max-width: 400px;
+  width: 60%;
+  height: auto;
+  object-fit: contain;
+}
+
+/* ===== 사분면 배치 =====
+   1) 4사분면(오른쪽 아래)  : 첫 번째
+   2) 1사분면(오른쪽 위)    : 두 번째
+   3) 3사분면(왼쪽 아래)    : 세 번째
+   4) 2사분면(왼쪽 위)      : 네 번째
+*/
+.family-introduce:nth-of-type(1) {
+  grid-column: 1;
+  grid-row: 1;
+} /* 2사분면 */
+.family-introduce:nth-of-type(2) {
+  grid-column: 2;
+  grid-row: 1;
+} /* 1사분면 */
+.family-introduce:nth-of-type(4) {
+  grid-column: 2;
+  grid-row: 2;
+} /* 4사분면 */
+.family-introduce:nth-of-type(3) {
+  grid-column: 1;
+  grid-row: 2;
+} /* 3사분면 */
+
+/* 반응형: 화면이 좁아지면 2열 → 1열 스택 (선택사항) */
+@media (max-width: 800px) {
+  .family-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, minmax(200px, auto));
+    height: auto;
+    width: 100%;
+  }
+  /* 순서는 그대로 두고 세로로 쌓임 */
+}
+.family-info {
+  display: block;
+  width: 50%;
+  font-size: 30px;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}

@@ -1,0 +1,64 @@
+.main-snack-bar {
+  font-family: YoonChildfundkoreaManSeh;
+  display: flex; /* 수평 배치 */
+  gap: 40px; /* 간격 */
+  justify-content: center; /* 가운데 정렬 */
+  align-items: center;
+  padding: 40px;
+}
+
+.request-snack {
+  font-size: 70px;
+  width: 50%;
+  font-weight: 100;
+  background-color: lightpink;
+  border-radius: 50px;
+}
+
+.main-snack-bar > div {
+  display: flex;
+  flex-direction: column; /* 이미지 위, 글자 아래 */
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease; /* 말풍선 확대 효과 */
+}
+
+.main-snack-bar img {
+  max-width: 200px; /* 이미지 크기 */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 마우스 올렸을 때 확대 효과 */
+.main-snack-bar img:hover {
+  transform: scale(1.08); /* 살짝 확대 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 그림자 */
+}
+.main-snack-bar {
+  display: flex; /* 수평 배치 */
+  gap: 40px; /* 간격 */
+  justify-content: center; /* 가운데 정렬 */
+  padding: 40px;
+}
+
+.main-snack-bar > div {
+  display: flex;
+  flex-direction: column; /* 이미지 위, 글자 아래 */
+  align-items: center;
+  text-align: center;
+  transition: transform 0.3s ease; /* 말풍선 확대 효과 */
+}
+
+.main-snack-bar img {
+  max-width: 2400px; /* 이미지 크기 */
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* 마우스 올렸을 때 확대 효과 */
+.main-snack-bar img:hover {
+  transform: scale(1.08); /* 살짝 확대 */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* 그림자 */
+}

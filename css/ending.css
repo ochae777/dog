@@ -1,0 +1,29 @@
+.ending-root {
+  font-family: YoonChildfundkoreaManSeh;
+  padding: 0%;
+  margin: 0;
+}
+
+.ending_introduce {
+  width: 50%;
+}
+.ending_introduce-text {
+  font-size: 50px;
+  z-index: 1;
+  margin-top: 150px;
+  margin-left: 500px;
+  margin-right: 2px;
+  justify-content: center;
+  display: block;
+  align-items: center;
+}
+.ending_introduce-img {
+  padding: 50px;
+  height: 400px;
+}
+.ending_introduce-profile {
+  margin-left: 450px;
+}
+.ending_introduce-profile2 {
+  margin-right: 500px;
+}

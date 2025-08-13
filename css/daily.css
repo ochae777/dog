@@ -1,0 +1,45 @@
+.daily-root {
+  font-family: YoonChildfundkoreaManSeh;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+/* 가운데 정렬 캔버스 */
+.gallery {
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  place-items: center;
+  padding: 0px;
+  height: 100%;
+}
+
+/* 중앙 제목(가운데 비워둔 채 오버레이) */
+.gallery-title {
+  position: absolute;
+  left: 50%;
+  top: 42.5%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  justify-content: center;
+  align-items: center;
+  font-size: 135px;
+  font-weight: 1000;
+
+  color: rgb(1, 63, 1);
+}
+/* 각 줄 */
+.row {
+  display: flex;
+  justify-content: space-between; /* 가로 가운데 정렬 */
+  gap: 10px; /* 사진 간격 */
+  margin-bottom: 12px;
+}
+
+.row img {
+  width: 400px; /* 사진 크기 */
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}

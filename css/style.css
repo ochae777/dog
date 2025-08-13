@@ -1,0 +1,122 @@
+@import "snack.css";
+@import "family.css";
+@import "daily.css";
+@import "menow.css";
+@import "product.css";
+@import "ending.css";
+@font-face {
+  font-family: "YoonChildfundkoreaManSeh";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2408@1.0/YoonChildfundkoreaManSeh.woff2")
+    format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.root {
+  font-family: YoonChildfundkoreaManSeh;
+  padding: 0%;
+  margin: 0;
+}
+
+.main_container {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  background-color: antiquewhite;
+}
+
+.dogbackgroundimg-top {
+  width: 100%;
+  top: 0;
+  position: fixed;
+}
+
+.dogbackgroundimg-bottom {
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+}
+
+.mid {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main_introduce-profile {
+  position: fixed;
+  width: 900px;
+  height: 900px;
+  bottom: 100px;
+  margin-left: -200px;
+}
+.main_introduce-text {
+  font-size: 80px;
+  z-index: 1;
+  margin-top: 150px;
+  margin-left: -900px;
+  margin-right: 200px;
+}
+.fa-mars {
+  color: blue;
+}
+/* 말풍선 컨테이너 */
+.main_introduce-cartoon {
+  position: absolute; /* 쏘니 사진 기준으로 배치 가능 */
+  top: 150px; /* 쏘니 위쪽으로 */
+  left: calc(50% + 450px); /* 쏘니 오른쪽으로 (조절 가능) */
+  z-index: 2; /* 사진보다 위 */
+}
+
+/* 말풍선 아이콘 */
+.snack-icon {
+  font-size: 500px; /* 말풍선 크기 */
+  color: lightpink; /* 말풍선 색 */
+
+  position: relative;
+}
+
+/* 말풍선 안 글자 */
+.snack-text {
+  position: absolute;
+  top: 50%; /* 세로 중앙 */
+  left: 50%; /* 가로 중앙 */
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: bold;
+  color: black;
+  text-align: center;
+  pointer-events: none; /* 글자 클릭 시 a태그 클릭 유지 */
+  text-decoration: underline;
+}
+
+/* 클릭 영역 */
+.snack-link {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+}
+.snack-link:visited {
+  color: black;
+}
+.family-link i {
+  color: black;
+}
+.gotonextpage {
+  z-index: 999;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 20px;
+  font-size: 50px;
+  color: black;
+}
+.nextpage-link:visited {
+  color: #f7a7bb;
+}
+.nextpage-link {
+  color: black;
+}
